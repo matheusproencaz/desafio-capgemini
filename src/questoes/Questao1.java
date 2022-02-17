@@ -22,12 +22,28 @@ public class Questao1 {
 		 * mesma linha.
 		 * 
 		 * */
-		for(int i = 0; i < n; i++) {
-			for(int j = 0; j < i; j++) {
+		for(int i = 1; i <= n; i++) {
+			int x = n - i;
+			
+			for(int j = 0; j < x; j++) {
+				System.out.print(" ");
+			}
+			for(int k = 0; k < i; k++) {
 				System.out.print("*");
 			}
-			System.out.println("*");
+			System.out.println();
 		}
 		sc.close();
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
