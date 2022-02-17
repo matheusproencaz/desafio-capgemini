@@ -11,17 +11,14 @@ public class Questao1 {
 		//Scanner para ler o valor de n;
 		System.out.print("n=");
 		int n = sc.nextInt();
-
-		/* Laço for para imprimir a "escada";
-		 * 
-		 * No primeiro for ele só irá aumentar até chegar no valor digitado, ou seja
-		 * irá de 0 até n, assim será imprimindo um "*" e pulando uma linha por conta do
-		 * println. 
-		 * 
-		 * No segundo for ele irá de 0 até i, e por conta do print vai digitar os "*" na
-		 * mesma linha.
-		 * 
-		 * */
+		/*
+		 * Laços de repetição "for" basicamente o que eles fazem é dada um número
+		 * "n" de degraus é imprimido o número de espaços menos  a variável de incremento
+		 * do primeiro for, dessa forma o número de espaços irá diminuir a cada "degrau"
+		 * já os asterísticos aumentam conforme i aumenta.
+		 * println no final para pular para o próxima linha/"degrau".
+		 */
+		
 		for(int i = 1; i <= n; i++) {
 			int x = n - i;
 			
