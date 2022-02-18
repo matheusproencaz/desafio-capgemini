@@ -11,7 +11,7 @@
 
 # Desafio
 
-O Desafio de programação é a terceira etapa do processo de seleção para a Academia Capgemin 2020. O objetivo é testar os conhecimentos em lógica de programação.
+O Desafio de programação é a terceira etapa do processo de seleção para a Academia Capgemin 2022. O objetivo é testar os conhecimentos em lógica de programação.
 Ele foi separado em 3 questões diferentes as quais foram implementadas em JAVA.
 
 **Na pasta src > testes, tem-se uma classe com diversos testes das questões.**
