@@ -1,17 +1,27 @@
 package questoes;
 
 import java.util.Arrays;
+import java.util.Scanner;
+
+/* Classe da Questão 3 do Desafio Capgemini.
+* @author: Matheus Proença
+*/
 
 public class Questao3 {
-
-	public static void main(String[] args) {
-		
-		//Entrada
-		String palavra = "ovo";
-		
-		//Saída
-		System.out.println(contarAnagramas(palavra));
-	}
+	
+ 	public static void main(String[] args) {
+ 		
+ 		//Entrada de dados utilizando Scanner.
+ 		Scanner sc = new Scanner(System.in);
+ 		
+ 		System.out.println("Digite um palavra para contar os anagramas:");
+ 		String palavra = sc.nextLine();
+ 		
+ 		System.out.println("Número de pares de anagramas:");
+ 		System.out.println(contarAnagramas(palavra));
+ 		 		
+ 		sc.close();
+ 	}
 	
 	//Método que conta, e passa por todos os pares de anagrama.
 	public static int contarAnagramas(String palavra){
@@ -47,8 +57,8 @@ public class Questao3 {
 	public static boolean eAnagrama(String palavra1, String palavra2) {
 		
 		//Transforma as Strings em vetores de caracteres.
-		char[] char1 = palavra1.toCharArray();
-		char[] char2 = palavra2.toCharArray();
+		char[] char1 = palavra1.toLowerCase().toCharArray();
+		char[] char2 = palavra2.toLowerCase().toCharArray();
 		
 		//Organizar eles de forma que fiquem iguais caso sejam anagramas.
 		Arrays.sort(char1);
